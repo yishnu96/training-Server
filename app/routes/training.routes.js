@@ -9,9 +9,9 @@ const training = require('../controllers/training.controller');
     router.get('/alltraining', training.findAll);
 
     // Update a Note with noteId
-    router.put('/training/:id', training.update);
+    router.put('/updateTraining/:id', training.update);
 
     // Delete a Note with noteId
-    router.delete('/training/:id', training.delete);
+    router.delete('/deleteTraining/:id', training.delete);
 
 module.exports = router;
